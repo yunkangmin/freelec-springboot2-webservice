@@ -40,8 +40,11 @@ dependencies {
     //테스트용도로 많이 사용된다.
     //이 책에서는 JPA의 테스트, 로컬환경에서의 구동에서 사용할 예정이다.
     compile('com.h2database:h2')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    compile('org.springframework.session:spring-session-jdbc')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.springframework.security:spring-security-test")
 
 }
 
